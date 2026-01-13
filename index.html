@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kalkulator JavaScript Live Result</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div class="panel-setting">
+    <h3>Pengaturan Tampilan</h3>
+
+    <div class="kontras-box">
+        <label>Kecerahan: <span id="persenText">100%</span></label>
+        <input type="range" id="kontrasRange" min="0" max="100" step="1" value="100">
+    </div>
+
+    <button class="toggle-theme" id="toggleTheme"> Dark / Light </button>
+</div>
+
+<div class="kalkulator">
+    <h2 style="text-align:center;">Kalkulator Sederhana</h2>
+
+    <div class="layar" id="layar">
+        <div class="expression" id="expression" contenteditable="true"></div>
+        <div class="preview" id="preview"></div>
+    </div>
+
+    <div class="tombol-container">
+        <button class="clear" data-value="C">C</button>
+        <button class="clear" data-value="DEL">DEL</button>
+        <button data-value="(">(</button>
+        <button class="operator" data-value=")">)</button>
+
+        <button class="trig" data-value="sin(">sin</button>
+        <button class="trig" data-value="cos(">cos</button>
+        <button class="trig" data-value="tan(">tan</button>
+        <button class="operator" data-value="/">÷</button>
+
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button class="operator" data-value="*">×</button>
+
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button class="operator" data-value="-">−</button>
+
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button class="operator" data-value="+">+</button>
+
+        <button data-value="0">0</button>
+        <button data-value=".">.</button>
+        <button class="equal" data-value="=">=</button>
+        <button class="operator" data-value="π">π</button>
+    </div>
+
+    <div class="fx-container">
+        <button class="trig" data-value="log(">log</button>
+        <button class="trig" data-value="ln(">ln</button>
+        <button class="trig" data-value="√(">√</button>
+        <button class="operator" data-value="^">^</button>
+    </div>
+</div>
+
+<div class="history-box">
+    <h3 style="text-align:center;">Riwayat</h3>
+    <div id="historyList"></div>
+</div>
+
+<div class="hapus-all-container">
+    <button id="hapusAll" style="background:#ff3b30; padding:10px; border-radius:10px; margin-top:5px; display:none;">Hapus Semua</button>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

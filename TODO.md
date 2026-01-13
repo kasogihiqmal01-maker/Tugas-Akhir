@@ -1,0 +1,7 @@
+- [x] Tambahkan variabel CSS untuk neumorphism shadows
+- [x] Update kalkulator container dengan 3D transforms dan shadows yang lebih dalam
+- [x] Terapkan neumorphism pada tombol: gradients dan box-shadows untuk efek raised
+- [x] Tambahkan inner shadow pada layar
+- [x] Sesuaikan hover dan active states untuk tombol agar terasa ditekan
+- [x] Tambahkan glow halus di dark mode
+- [x] Pastikan transisi smooth
